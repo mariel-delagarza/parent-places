@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190329175832) do
+ActiveRecord::Schema.define(version: 20190329181839) do
 
   create_table "comments", force: :cascade do |t|
     t.text    "content"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20190329175832) do
     t.boolean "slings_for_carseats"
     t.boolean "family_restrooms"
     t.boolean "nursing_rooms"
-    t.integer "user_id"
+    t.integer "user"
     t.string  "state"
   end
 
