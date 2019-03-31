@@ -16,6 +16,10 @@ class ApplicationController < Sinatra::Base
     erb :'places/index'
   end
 
+  get "/places/new" do
+    erb :'places/new'
+  end
+
   get "/places/:id" do
     @place = Place.find(params[:id])
     erb :'places/show'
