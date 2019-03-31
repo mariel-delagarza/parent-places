@@ -29,5 +29,12 @@ class ApplicationController < Sinatra::Base
     binding.pry
   end
 
+  get "/users/new" do
+    erb :'users/new'
+  end
+
+  post "/users" do
+    binding.pry
+  end
 
 end
