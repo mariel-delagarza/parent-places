@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
     erb :'places/show'
   end
 
-  post "/pirates" do
+  post "/places" do
     binding.pry
   end
 
