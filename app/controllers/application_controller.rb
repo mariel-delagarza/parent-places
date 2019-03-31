@@ -11,8 +11,10 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
-  get '/places'
+  get "/places" do
     @places = Place.all
-    erb :'pirats\index'
+    erb :'places/index'
   end
+
+
 end
